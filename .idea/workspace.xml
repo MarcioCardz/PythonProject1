@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/produto/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/produto/templates/produto_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgmodas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgmodas/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produto/templates/produto_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/produto/templates/produto_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/produto/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/produto/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="inclusao produto form.html e forms.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Marcio" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -83,11 +79,24 @@
       <workItem from="1743335756555" duration="246000" />
       <workItem from="1743336044424" duration="13650000" />
       <workItem from="1743351939310" duration="11188000" />
-      <workItem from="1743462330353" duration="5620000" />
+      <workItem from="1743462330353" duration="6106000" />
     </task>
+    <task id="LOCAL-00001" summary="inclusao produto form.html e forms.py">
+      <option name="closed" value="true" />
+      <created>1743468479988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743468479988</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inclusao produto form.html e forms.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="inclusao produto form.html e forms.py" />
   </component>
 </project>
