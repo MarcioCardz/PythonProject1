@@ -26,10 +26,10 @@
             {% for object in object_list %}
                 <tr>
                     <td>
-                        <!-- Falta um <A> aqui -->
+                       <a href="{{ object.get_absolute_url }}">{{ object }}</a>
                     </td>
                     <td>{{ object.nf_formated }}</td>
-                    <td>{{ object.created }}</td>
+                    <td>{{ object.created_at }}</td>
                     <td>{{ object.funcionario.first_name }}</td>
                 </tr>
             {% endfor %}
