@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="estoque entrada form">
+    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="estoque entrada ajax para saldo">
+      <change afterPath="$PROJECT_DIR$/estoque/managers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estoque/templates/estoque_saida_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estoque/templates/estoque_saida_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/includes/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estoque/templates/estoque_entrada_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/templates/estoque_entrada_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estoque/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produto/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/produto/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/produto/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/produto/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +94,8 @@
       <workItem from="1743549657126" duration="3912000" />
       <workItem from="1743887152788" duration="758000" />
       <workItem from="1743930529967" duration="18316000" />
-      <workItem from="1744066800839" duration="3879000" />
+      <workItem from="1744066800839" duration="4256000" />
+      <workItem from="1744154807029" duration="2537000" />
     </task>
     <task id="LOCAL-00001" summary="inclusao produto form.html e forms.py">
       <option name="closed" value="true" />
@@ -125,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743963185774</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="estoque entrada ajax para saldo">
+      <option name="closed" value="true" />
+      <created>1744071091553</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744071091553</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +159,7 @@
     <MESSAGE value="estoque entrada list" />
     <MESSAGE value="estoque entrada detail" />
     <MESSAGE value="estoque entrada form" />
-    <option name="LAST_COMMIT_MESSAGE" value="estoque entrada form" />
+    <MESSAGE value="estoque entrada ajax para saldo" />
+    <option name="LAST_COMMIT_MESSAGE" value="estoque entrada ajax para saldo" />
   </component>
 </project>

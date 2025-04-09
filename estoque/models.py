@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse_lazy
 
 from core.models import TimeStampedModel
+from .managers import EstoqueEntradaManager, EstoqueSaidaManager
 from produto.models import Produto
 
 # Create your models here.
@@ -25,11 +26,35 @@ class Estoque(TimeStampedModel):
     def __str__(self):
         return '{} - {} - {}'.format(self.pk, self.nf, self.created_at.strftime('%d/%m/%Y'))
 
-    def get_absolute_url(self):
-        return reverse_lazy('estoque:estoque_entrada_detail', kwargs={'pk': self.pk})
+
 
     def nf_formated(self):
         return str(self.nf).zfill(6)
+
+
+
+class EstoqueEntrada(Estoque):
+    objects = EstoqueEntradaManager()
+
+    class Meta:
+        proxy = True
+        verbose_name = 'estoque entrada'
+        verbose_name_plural = 'estoque entrada'
+
+    def get_absolute_url(self):
+        return reverse_lazy('estoque:estoque_entrada_detail', kwargs={'pk': self.pk})
+
+
+
+class EstoqueSaida(Estoque):
+    objects = EstoqueSaidaManager()
+    class Meta:
+        proxy = True
+        verbose_name = 'estoque saida'
+        verbose_name_plural = 'estoque saida'
+
+    def get_absolute_url(self):
+        return reverse_lazy('estoque:estoque_saida_detail', kwargs={'pk': self.pk})
 
 
 class EstoqueItens(models.Model):
