@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="Separado os statics">
+    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="Refatorar views estoque entrada e saida">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/templates/estoque_entrada_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/templates/estoque_saida_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/templates/estoque_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estoque/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +90,7 @@
       <workItem from="1743930529967" duration="18316000" />
       <workItem from="1744066800839" duration="4256000" />
       <workItem from="1744154807029" duration="2706000" />
-      <workItem from="1744318358373" duration="6977000" />
+      <workItem from="1744318358373" duration="7674000" />
     </task>
     <task id="LOCAL-00001" summary="inclusao produto form.html e forms.py">
       <option name="closed" value="true" />
@@ -146,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744326097813</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refatorar views estoque entrada e saida">
+      <option name="closed" value="true" />
+      <created>1744327981079</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744327981079</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +181,7 @@
     <MESSAGE value="estoque entrada ajax para saldo" />
     <MESSAGE value="estoque saida html list e detail" />
     <MESSAGE value="Separado os statics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separado os statics" />
+    <MESSAGE value="Refatorar views estoque entrada e saida" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refatorar views estoque entrada e saida" />
   </component>
 </project>
