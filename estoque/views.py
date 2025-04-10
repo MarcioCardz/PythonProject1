@@ -32,26 +32,35 @@ def dar_baixa_estoque(form):
     print('Estoque atualizado com sucesso!')
 
 
-
-def estoque_entrada_add(request):
-    template_name = 'estoque_entrada_form.html'
+def estoque_add(request,template_name,movimento,url):
     estoque_form = Estoque()
-    item_estoque_formset= inlineformset_factory(EstoqueEntrada,EstoqueItens, form=EstoqueItensForm, extra=0, min_num=1, validate_min=True,)
+    item_estoque_formset = inlineformset_factory(Estoque, EstoqueItens, form=EstoqueItensForm, extra=0, min_num=1, validate_min=True, )
     if request.method == 'POST':
         form = EstoqueForm(request.POST,instance=estoque_form,prefix='main')
         formset=item_estoque_formset(request.POST,instance=estoque_form,prefix='estoque')
         if form.is_valid() and formset.is_valid():
             form = form.save()
             formset.save()
+            form.movimento = movimento
+            form.save=()
+            formset.save()
             dar_baixa_estoque(form)
-            url='estoque:estoque_entrada_detail'
-            return HttpResponseRedirect(resolve_url(url,form.pk))
+            return {'pk':form.pk,}
     else:
         form=EstoqueForm(instance=estoque_form,prefix='main')
         formset=item_estoque_formset(instance=estoque_form,prefix='estoque')
-
     context = {'form': form, 'formset': formset}
+    return context
+
+def estoque_entrada_add(request):
+    template_name = 'estoque_entrada_form.html'
+    movimento= 'e'
+    url='estoque:estoque_entrada_detail'
+    context= estoque_add(request,template_name,movimento,url)
+    if context.get('pk'):
+        return HttpResponseRedirect(resolve_url(url,context.get('pk')))
     return render(request, template_name, context)
+
 
 def estoque_saida_list(request):
     template_name = 'estoque_saida_list.html'
@@ -67,20 +76,9 @@ def estoque_saida_detail(request,pk):
 
 def estoque_saida_add(request):
     template_name = 'estoque_saida_form.html'
-    estoque_form = Estoque()
-    item_estoque_formset= inlineformset_factory(EstoqueSaida, EstoqueItens, form=EstoqueItensForm, extra=0, min_num=1, validate_min=True,)
-    if request.method == 'POST':
-        form = EstoqueForm(request.POST,instance=estoque_form,prefix='main')
-        formset=item_estoque_formset(request.POST,instance=estoque_form,prefix='estoque')
-        if form.is_valid() and formset.is_valid():
-            form = form.save()
-            formset.save()
-            dar_baixa_estoque(form)
-            url='estoque:estoque_saida_detail'
-            return HttpResponseRedirect(resolve_url(url,form.pk))
-    else:
-        form=EstoqueForm(instance=estoque_form,prefix='main')
-        formset=item_estoque_formset(instance=estoque_form,prefix='estoque')
-
-    context = {'form': form, 'formset': formset}
+    movimento = 's'
+    url = 'estoque:estoque_saida_detail'
+    context = estoque_add(request, template_name, movimento, url)
+    if context.get('pk'):
+        return HttpResponseRedirect(resolve_url(url, context.get('pk')))
     return render(request, template_name, context)
