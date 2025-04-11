@@ -20,5 +20,11 @@
         </div>
       </li>
     </ul>
+    {% if user.is_authenticated %}
+      <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Sair</button>
+      </form>
+    {% endif %}
   </div>
 </nav>

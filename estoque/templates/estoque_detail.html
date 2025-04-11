@@ -2,8 +2,17 @@
 
 {% block content %}
 
-<a href="{% url url_list %}">Voltar </a>
+{% if object.movimento == 'e' %}
+    <a href="{% url 'estoque:estoque_entrada_list' %}">Voltar</a>
+{% else %}
+    <a href="{% url 'estoque:estoque_saida_list' %}">Voltar</a>
+{% endif %}
 
+{% if object.movimento == 'e' %}
+    <h1>Entrada: {{ object }}</h1>
+{% else %}
+    <h1>Saída: {{ object }}</h1>
+{% endif %}
 <h1>{{ object }}</h1>
 
 <div class="col-sm-6">

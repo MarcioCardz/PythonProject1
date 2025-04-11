@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="Refatorar views e estoque list">
-      <change beforePath="$PROJECT_DIR$/estoque/templates/estoque_entrada_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estoque/templates/estoque_saida_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/templates/estoque_detail.html" afterDir="false" />
+    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="Refatorar estoque detail">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/core/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/estoque_entrada.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/static/js/estoque_entrada.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/estoque_saida.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/static/js/estoque_saida.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/includes/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/templates/estoque_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/templates/estoque_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/templates/estoque_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/templates/estoque_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estoque/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estoque/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/estoque/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgmodas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgmodas/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgmodas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgmodas/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produto/templates/produto_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/produto/templates/produto_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/produto/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +103,8 @@
       <workItem from="1743930529967" duration="18316000" />
       <workItem from="1744066800839" duration="4256000" />
       <workItem from="1744154807029" duration="2706000" />
-      <workItem from="1744318358373" duration="7977000" />
+      <workItem from="1744318358373" duration="9674000" />
+      <workItem from="1744387241586" duration="18244000" />
     </task>
     <task id="LOCAL-00001" summary="inclusao produto form.html e forms.py">
       <option name="closed" value="true" />
@@ -163,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744328593528</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Refatorar estoque detail">
+      <option name="closed" value="true" />
+      <created>1744329067907</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744329067907</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +213,7 @@
     <MESSAGE value="Separado os statics" />
     <MESSAGE value="Refatorar views estoque entrada e saida" />
     <MESSAGE value="Refatorar views e estoque list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refatorar views e estoque list" />
+    <MESSAGE value="Refatorar estoque detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refatorar estoque detail" />
   </component>
 </project>

@@ -4,7 +4,7 @@ from .models import Estoque,EstoqueItens
 class EstoqueForm(forms.ModelForm):
     class Meta:
         model = Estoque
-        fields = '__all__'
+        fields = ('nf',)
 
 class EstoqueItensForm(forms.ModelForm):
     class Meta:

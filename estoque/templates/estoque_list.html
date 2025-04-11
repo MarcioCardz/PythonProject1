@@ -2,6 +2,7 @@
 
 {%block content%}
 
+
 <h2> Estoque {{ titulo }}
     <span class=" pull-right">
         <a href="{% url url_add %}">
@@ -26,7 +27,7 @@
             {% for object in object_list %}
                 <tr>
                     <td>
-                       <a href="{{ object.get_absolute_url }}">{{ object }}</a>
+                       <a href="{% url 'estoque:estoque_detail' object.pk %}">{{ object }}</a>
                     </td>
                     <td>{{ object.nf_formated }}</td>
                     <td>{{ object.created_at }}</td>
