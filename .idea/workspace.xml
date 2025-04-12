@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="Finalizando os detalhes e refatorando itens">
-      <change afterPath="$PROJECT_DIR$/importando_produtos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/produto/templates/produto_import.html" afterDir="false" />
+    <list default="true" id="4f06118c-1e2c-4a95-b765-bc3620ca4ec7" name="Changes" comment="Criado importacao csv e alterado nav.html">
+      <change afterPath="$PROJECT_DIR$/core/templates/includes/pagination.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/includes/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produto/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/produto/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produto/templates/produto_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/produto/templates/produto_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/produto/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/produto/views.py" afterDir="false" />
     </list>
@@ -93,7 +95,8 @@
       <workItem from="1744066800839" duration="4256000" />
       <workItem from="1744154807029" duration="2706000" />
       <workItem from="1744318358373" duration="9674000" />
-      <workItem from="1744387241586" duration="20538000" />
+      <workItem from="1744387241586" duration="20937000" />
+      <workItem from="1744472055708" duration="4182000" />
     </task>
     <task id="LOCAL-00001" summary="inclusao produto form.html e forms.py">
       <option name="closed" value="true" />
@@ -183,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744413486370</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Criado importacao csv e alterado nav.html">
+      <option name="closed" value="true" />
+      <created>1744416090368</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1744416090368</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +223,7 @@
     <MESSAGE value="Refatorar views e estoque list" />
     <MESSAGE value="Refatorar estoque detail" />
     <MESSAGE value="Finalizando os detalhes e refatorando itens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalizando os detalhes e refatorando itens" />
+    <MESSAGE value="Criado importacao csv e alterado nav.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criado importacao csv e alterado nav.html" />
   </component>
 </project>

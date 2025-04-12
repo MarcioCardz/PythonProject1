@@ -23,6 +23,11 @@ def produto_list(request):
     context = {'object_list':objects }
     return render(request, template_name, context)
 
+class ProdutoList(ListView):
+    model = Produto
+    template_name = 'produto_list.html'
+    paginate_by = 10
+
 def produto_detail(request,pk):
     template_name='produto_detail.html'
     obj = Produto.objects.get(pk=pk)
@@ -83,3 +88,14 @@ def import_csv(request):
 
     template_name = 'produto_import.html'
     return render(request, template_name)
+
+def export_csv(request):
+    header= ('importado', 'ncm' , 'produto', 'preco', 'estoque', 'estoque_minimo',)
+    produtos = Produto.objects.all().values_list(*header)
+    with open('fix/produtos_exportados.csv', 'w') as csvfile:
+        produtos_writer = csv.writer(csvfile)
+        produtos_writer.writerow(header)
+        for produto in produtos:
+            produtos_writer.writerow(produto)
+    messages.success(request, 'Produtos exportados com sucesso!')
+    return HttpResponseRedirect(reverse('produto:produto_list'))
