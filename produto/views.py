@@ -1,8 +1,12 @@
-from re import search
+import csv
+import io
 
-from django.http import JsonResponse
+from re import search
+from django.contrib import messages
+from django.http import JsonResponse, HttpResponseRedirect
 from django.shortcuts import render
-from django.views.generic import CreateView, UpdateView
+from django.urls import reverse
+from django.views.generic import CreateView, UpdateView, ListView
 
 from .forms import ProdutoForm
 from .models import Produto
@@ -44,3 +48,38 @@ def produto_json(request, pk):
     produto = Produto.objects.filter(pk=pk)
     data = [item.to_dict_json() for item in produto]
     return JsonResponse({'data':data})
+
+def save_data(data):
+    '''
+    Salva os dados no banco.
+    '''
+    aux = []
+    for item in data:
+        produto = item.get('produto')
+        ncm = str(item.get('ncm'))
+        importado = True if item.get('importado') == 'True' else False
+        preco = item.get('preco')
+        estoque = item.get('estoque')
+        estoque_minimo = item.get('estoque_minimo')
+        obj = Produto(
+            produto=produto,
+            ncm=ncm,
+            importado=importado,
+            preco=preco,
+            estoque=estoque,
+            estoque_minimo=estoque_minimo,
+        )
+        aux.append(obj)
+    Produto.objects.bulk_create(aux)
+
+def import_csv(request):
+    if request.method == 'POST' and request.FILES['myfile']:
+        myfile = request.FILES['myfile']
+        file= myfile.read().decode('utf8')
+        reader = csv.DictReader(io.StringIO(file))
+        data= [line for line in reader]
+        save_data(data)
+        return HttpResponseRedirect(reverse('produto:produto_list'))
+
+    template_name = 'produto_import.html'
+    return render(request, template_name)
